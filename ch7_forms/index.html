@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html forms</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+
+    <form
+      action="https://google.com"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend align="center">Basic info</legend>
+        <br />
+        <label for="firstName">First Name:</label> <br /><br />
+        <input
+          type="text"
+          name="firstName"
+          id="Name"
+          placeholder="Enter your first name"
+          required
+        />
+        <br /><br />
+
+        <label for="lastName">Last Name:</label> <br /><br />
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Enter your last name"
+          required
+        />
+        <br /><br />
+
+        <label>Gender:</label><br /><br />
+
+        <input type="radio" id="male" name="gender" value="male" />
+
+        <label for="male">Male</label><br />
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br /><br />
+
+        <br /><br />
+
+        <label for="dob">Date Of Birth:</label> <br /><br />
+        <input type="date" name="dob" id="dob" required /> <br /><br />
+
+        <label for="email">Email:</label> <br /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br /><br />
+        <label for="password">Password:</label> <br /><br />
+        <input type="password" name="password" id="password" required />
+        <br /><br />
+    
+        <button type="submit">Submit</button>
+        <button type="reset" >reset</button>
+      </fieldset>
+      <fieldset>
+        <legend align="center">An other details</legend>
+        <br />
+
+        <label for="url">Website URL:</label>
+        <input type="url" id="url" name="url" /><br /><br />
+
+        <label for="color">Pick a color:</label>
+        <input type="color" id="color" name="color" /><br /><br />
+
+        <label for="range">Select a range (1-100):</label>
+        <input
+          type="range"
+          id="range"
+          name="range"
+          min="1"
+          max="100"
+        /><br /><br />
+
+        <label for="time">Select a time:</label>
+        <input type="time" id="time" name="time" /><br /><br />
+
+        <label for="datetime">Select date & time:</label>
+        <input
+          type="datetime-local"
+          id="datetime"
+          name="datetime"
+        /><br /><br />
+
+        <label for="month">Select month:</label>
+        <input type="month" id="month" name="month" /><br /><br />
+
+        <label for="week">Select week:</label>
+        <input type="week" id="week" name="week" /><br /><br />
+
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file" /><br /><br />
+
+
+        <label for="hidden">Hidden input:</label>
+        <input
+          type="hidden"
+          id="hidden"
+          name="hidden"
+          value="secret"
+        /><br /><br />
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" /><br /><br />
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
